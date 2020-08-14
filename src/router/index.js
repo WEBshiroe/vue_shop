@@ -17,7 +17,7 @@ Vue.use(VueRouter)
     {
       path: '/home',
       name: 'Home',
-      component: () => import(/* webpackChunkName: "about" */ '../views/home.vue')
+      component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
     }
 ]
 
