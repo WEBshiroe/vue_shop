@@ -17,7 +17,18 @@ Vue.use(VueRouter)
     {
       path: '/home',
       name: 'Home',
-      component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
+      component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue'),
+      redirect:'/welcome',
+      children:[{
+        path:'/welcome',
+        name:'Welcome',
+        component: () => import('../views/Welcome')
+      },
+      ,{
+        path:'/users',
+        name:'User',
+        component: () => import('../views/user/User')
+      }]
     }
 ]
 
