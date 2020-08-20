@@ -23,11 +23,19 @@ Vue.use(VueRouter)
         path:'/welcome',
         name:'Welcome',
         component: () => import('../views/Welcome')
-      },
-      ,{
+      },{
         path:'/users',
         name:'User',
         component: () => import('../views/user/User')
+      }
+      ,{
+        path:'/rights',
+        name:'Rights',
+        component: () => import('../views/power/Rights.vue')
+      },{
+        path:'/roles',
+        name:'Roles',
+        component: () => import('../views/power/Roles.vue')
       }]
     }
 ]

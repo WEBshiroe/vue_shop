@@ -17,7 +17,7 @@ import {
     Breadcrumb,
     BreadcrumbItem,
     Card,
-    Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox
+    Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox,Tag,Tree,Select,Option
 } from 'element-ui'
 
 // user分支 修改了首字母大小写
@@ -44,5 +44,9 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
